@@ -12,6 +12,17 @@
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+      .font-manrope {
+          font-family: "Manrope", sans-serif;
+        }
+    </style>
+
     <script>
         tailwind.config = {
           theme: {
@@ -19,71 +30,69 @@
               colors: {
                 clifford: '#da373d',
                 'color-primary': '#E76F51',
+                'color-bacg': '#ABEF5F',
               }
             }
           }
         }
       </script>
+
 </head>
-<body>
+<body class="font-manrope">
 
     <header class="w-10/12 mx-auto">
-      <nav>
+      <nav class="my-5">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-xl">Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>             
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end">
             <div class="dropdown dropdown-end">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
+                
+                <i class="fa-solid fa-bars"></i>
               </div>
               <ul
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                <li><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>             
+                <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <a class="btn hidden lg:block">Button</a>
+            <a class="btn p-4 hidden lg:block">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-s-xl"></i></a>
           </div>
         </div>
-        
-        
+            
       </nav>
+      <!-- Card section -->
+      <section>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="./assets/banner.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body text-center space-y-4">
+            <h2 class="max-w-[900px] mx-auto text-5xl font-bold">A barn house of this design has a striking appearance</h2>
+            <p class="max-w-[900px] mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-color-bacg rounded-xl">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
